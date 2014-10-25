@@ -92,7 +92,7 @@ read.table("tidyAccelerometerData.txt",
             
 #### Notes on the original data set:
 
-From documents provided wih the original data set:
+From documents provided with the original data set:
 
 Notes: 
 
