@@ -57,11 +57,11 @@ trainDataSet <-  cbind(subject_train, y_train, X_train_reduced)
 
 ## The test data set.
 
-# read in X_train.txt.
+# read in X_test.txt.
 X_test <- read.table(file.path("UCI HAR Dataset/test", 
                                 "X_test.txt"), 
                       header = FALSE)
-# give X_train the column names of features.
+# give X_test the column names of features.
 colnames(X_test) <- features[,2] 
 
 # now select only the column names in X_test that
