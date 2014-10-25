@@ -75,8 +75,7 @@ Join train and test data sets together
 
 19. clean up row.names:
 
-20. up to now, we have used th
-21. e column "y" as the activity factor, since it was useful when working with the data. However, we can now remove it since the activity column contains essentially the same data:
+20. up to now, we have used the column "y" as the activity factor, since it was useful when working with the data. However, we can now remove it since the "activity"" column contains essentially the same data:
 
 21. Write the tidy data set simplifiedData to a .txt file.
 
