@@ -98,10 +98,12 @@ combinedDataSet <- combinedDataSet[order(combinedDataSet$subject,
 # now need to clean up row.names:
 row.names(combinedDataSet) <- seq(nrow(combinedDataSet))
 
+# convert data frame to data table to be able to use data.table
+# manipulation package.
 combinedDataSet <- data.table(combinedDataSet)
-# simplifiedData <- by(combinedDataSet, 
-#                      list(combinedDataSet$subject, combinedDataSet$y), 
-#                      colMeans)
+
+# simplify data set by taking mean value of each
+# feature grouped by subject and activity:
 simplifiedData <- combinedDataSet[, lapply(.SD,mean), 
                                   by = list(subject, 
                                             y, 

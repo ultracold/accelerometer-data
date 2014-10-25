@@ -79,9 +79,15 @@ Join train and test data sets together
 
 19. clean up row.names:
 
-20. up to now, we have used the column "y" as the activity factor, since it was useful when working with the data. However, we can now remove it since the "activity"" column contains essentially the same data:
+Now create a tidy data set that takes the mean value of each featured grouped by subject and activity:
 
-Finally, write the tidy data set simplifiedData to a .txt file named tidyAccelerometerData.txt.
+20. convert data frame to data table to be able to use data.table manipulation package.
+
+21. simplify data set by taking mean value of each feature grouped by subject and activity:
+
+22. up to now, we have used the column "y" as the activity factor, since it was useful when working with the data. However, we can now remove it since the "activity"" column contains essentially the same data:
+
+23. Finally, write the tidy data set simplifiedData to a .txt file named tidyAccelerometerData.txt.
 
 #### Import tidyAccelerometerData.txt
 
