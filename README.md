@@ -77,7 +77,7 @@ Join train and test data sets together
 
 20. up to now, we have used the column "y" as the activity factor, since it was useful when working with the data. However, we can now remove it since the "activity"" column contains essentially the same data:
 
-Finally, write the tidy data set simplifiedData to a .txt file.
+Finally, write the tidy data set simplifiedData to a .txt file named tidyAccelerometerData.txt.
 
 #### Import tidyAccelerometerData.txt
 
